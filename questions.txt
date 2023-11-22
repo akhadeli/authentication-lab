@@ -1,0 +1,11 @@
+1:
+    By default, Django Rest Framework's browsable API uses session authentication. When a user accesses the browsable API, they are assigned a newly generated session ID, therefore subsequent requests will include this session ID thorugh a cookie to identify the user, and autheticate the user. When accessing the browsable API, the user will have their own Django user instance.
+
+2:
+    Using the -a or --auth, httpie will default to basic authentication provided that the credentials and given (username and password).
+
+3:
+    While session authentication uses a session ID stored in the form of a cookie or on the server, token authentication involves a cryptographically secure token, which represents the user's authentication information. This token is set in the authorization header for subsequent requests after the user receives the token. Tokens do not need to be stored as they can be decoded by the server to authenticate requests coming from the user. Token authentication is better than basic authentication, since user authentication information is encoded in a cryptographically secure string, which can also be regenerated on a regular basis/set time limit. This provides extra security as a result.
+
+4:
+    Through OAuth 2 we can provide applactions to obtain controlled access to a user's account through an HTTP server. The work goes like this: The user wants to complete an action involving another application, therefore the user grants the application authorization to access resources from the resource server. By granting authorization, the application retrieves an access token from an authorization server by providing the authentication grant and authenticating the application itself. Once the access token is obtained, the application is now authorized, and can request the resources it needs from the resource server while providing its auhentication.

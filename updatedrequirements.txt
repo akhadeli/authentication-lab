@@ -1,0 +1,14 @@
+autopep8
+certifi
+chardet
+Django
+django-filter
+djangorestframework
+httpie
+idna
+Markdown
+pycodestyle
+Pygments
+pytz
+requests
+urllib3
